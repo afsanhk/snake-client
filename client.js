@@ -13,11 +13,16 @@ const connect = function () {
   // conn.on('connect', callback) => runs callback on connection to server
   conn.on('connect', () => console.log(`Successfully connected to the game server!`));
   conn.on('connect', () => conn.write(`Name: AHK`));
+  
+  
+  // TEST CODE: conn.on('connect', () => setInterval(() => conn.write(`Move: up`),50));
+  
+  
   // conn.on('data', callback) => runs callback when data is received from server
   conn.on('data', (data) => console.log(`${data}`)); // Or console.log(data.toString())
 
 
-  return conn;
+  return conn;  
 };
 
 module.exports = {
