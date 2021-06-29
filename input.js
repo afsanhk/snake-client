@@ -29,6 +29,18 @@ const handleUserInput = function (key) {
       case 'd':
         connection.write(`Move: right`);
         break;
+      case 'g':
+        connection.write(`Say: TIME TO CRASH`);
+        break;
+      case 'f':
+        connection.write(`Say: FOOD PLS`);
+        break;
+      case '2':
+        connection.write(`Say: Hiss My Good Sir`);
+        break;
+      case '1':
+        connection.write(`Say: jsNotPython`);
+        break;
     };
 };
 
