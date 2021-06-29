@@ -10,6 +10,10 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
+  // conn.on('connect', callback) => runs callback on connection to server
+  conn.on('connect', () => console.log(`Successfully connected to the game server!`));
+  conn.on('connect', () => conn.write(`Name: AHK`));
+  // conn.on('data', callback) => runs callback when data is received from server
   conn.on('data', (data) => console.log(`${data}`)); // Or console.log(data.toString())
 
 
