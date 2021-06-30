@@ -1,6 +1,9 @@
-const IP = '10.0.2.15';
-const PORT = '50541';
+const IP = '135.23.223.133';
+const PORT = '50542';
 
+// For local server:
+// const IP = '10.0.2.15';
+// const PORT = '50541';
 module.exports = {
   IP,
   PORT,
